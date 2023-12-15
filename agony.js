@@ -20,6 +20,18 @@ const playButton = document.getElementById('HiTler');
     playButton.addEventListener('click', function() {
       audioPlayer.play();
     });
+ function createGlitch() {
+      const elements = document.querySelectorAll('body');
+      const randomElement = elements[Math.floor(Math.random() * elements.length)];
+      const glitchTexts = ['REFRESH PAGE !!', 'Oops!', 'Error!', '404'];
+      const glitchColors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+      const randomText = glitchTexts[Math.floor(Math.random() * glitchTexts.length)];
+      const randomColor = glitchColors[Math.floor(Math.random() * glitchColors.length)];
+      randomElement.innerText = randomText;
+      randomElement.style.color = randomColor;
+   randomElement.innerHTML = `<div style="font-size: 40px; text-align: center; margin-top: 40vh; color: ${randomColor}">${randomText}</div>`;
+    }
+    setInterval(createGlitch, 3500);
  const form = document.getElementById('painForm');
   form.addEventListener('mouseover', function() {
     alert('Pleb Trying to move around');
