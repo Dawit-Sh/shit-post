@@ -24,4 +24,4 @@ function HabibiCat() {
     alert('Habibi Cat Wants to throw wisdom unto thee.');
   }
 }
-//setInterval(HabibiCat, 3000); 
+setInterval(HabibiCat, 3000); 
