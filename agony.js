@@ -1,3 +1,5 @@
+//Curious now are we ??
+//well a shitty site should have a shitty code ... enjoy :) 
 function Darkmode() {
 window.alert("Don't be a pussy use WHITE MODE");
 }
@@ -31,7 +33,6 @@ const playButton = document.getElementById('HiTler');
       randomElement.style.color = randomColor;
    randomElement.innerHTML = `<div style="font-size: 40px; text-align: center; margin-top: 40vh; color: ${randomColor}">${randomText}</div>`;
     }
-    setInterval(createGlitch, 3500);
  const form = document.getElementById('painForm');
   form.addEventListener('mouseover', function() {
     alert('Pleb Trying to move around');
